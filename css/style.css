@@ -12,20 +12,25 @@
 body{
 	font-family: "Century Gothic Bold";
 }
+
 header div{
 	z-index: 1;
 }
 
-.parallaxPig{
-	background: #a4a4a4;
+.pigHead{
+	position: absolute;
+	z-index: -2;
+	left: 600px;
 }
 
-.wapperHead{
-	
-	z-index: -100;
+.wapperHead {
 	position: absolute;
-	top: -216px;
-	left: -29px;
+	z-index: -3;
+	top: -140px;
+	left: 500px;
+	width: 3000px;
+	height: 1000px;
+	
 }
 
 header{
@@ -283,4 +288,29 @@ header{
 	width: 1000px;
 	height: 550px;
 	color: hotpink;
+}
+
+.navBut{
+}
+
+.blockTwoBut{
+ position: absolute;
+ top: 900px;
+ left: 1200px;
+ opacity: 0.6;
+}
+
+.blockTwoBut:hover{
+ opacity: 1;
+ transform: scale(1.2);
+}
+
+.blockTwoButRev:hover{
+	transform: scale(-1.2 , -1.2);
+}
+
+.blockTwoButRev{
+	position: absolute;
+	left: 100px;
+	transform: scale(-1,-1);
 }

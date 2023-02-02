@@ -13,7 +13,8 @@ let label = document.querySelector('.label');
 let corm = document.querySelector('.corm');
 let textLabel = document.querySelector('.cormLabel');
 let animal = document.querySelector('.animal');
-let pathVal = document.querySelector('#animWap')
+let pathVal = document.querySelector('#animWap');
+const masAnim=[chickenN , rabbit , chickenLay , cow , duck, pig , quail , turkey ];
 rabbit.texts={
 	h1:"Комбикорм для кроликов",
 	p1:`Изготовлен из отборных злаковых смесей и
@@ -116,6 +117,8 @@ duck.texts={
 }
 function transform(){
 	if(this.checked == true){
+		textLabel.style.top= "470px";
+		textLabel.style.left = "120px";
 		infoH1.textContent = this.texts.h1;
 		infoP1.textContent =this.texts.p1;
 		infoP2.textContent =this.texts.p2;
@@ -136,7 +139,8 @@ function transform(){
 			textLabel.style.top="520px"
 			textLabel.style.left="150px"
 		}
-		pathVal.attributes[1].value = this.texts.fill
+		pathVal.attributes[1].value = this.texts.fill;
+		
 	}
 }
 rabbit.onclick = transform;
