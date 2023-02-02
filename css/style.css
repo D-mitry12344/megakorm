@@ -1,0 +1,286 @@
+@font-face {
+  font-family: "Century Gothic Bold";
+  src: url("../fonts/centurygothic.ttf")
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../fonts/centurygothiclit.ttf")
+}
+
+
+body{
+	font-family: "Century Gothic Bold";
+}
+header div{
+	z-index: 1;
+}
+
+.parallaxPig{
+	background: #a4a4a4;
+}
+
+.wapperHead{
+	
+	z-index: -100;
+	position: absolute;
+	top: -216px;
+	left: -29px;
+}
+
+header{
+	/*background: url("../img/vectorPig.svg") left 373px
+	top 1px no-repeat;*/
+}
+
+.labelHead{
+	width: 100%;
+	display: flex;
+}
+
+.logoHead{
+	padding-left: 158px;
+	padding-top: 44px;
+	margin-right: 0;
+}
+
+.transitionsHead{
+	display: flex;
+	padding-left: 227px;
+	text-decoration: none;
+	list-style: none;
+	color: #30529F;
+	font-size: 14px;
+	font-weight: 700;
+	font-family: "Century Gothic Bold";
+}
+
+.transitionsHead li{
+	display: flex;
+	padding: 21px;
+	text-decoration: none;
+}
+
+.transitionsHead li:nth-child(2) {
+	padding-left: 34px;
+}
+
+.transitionsHead li:nth-child(3){
+	padding-left: 35px;
+}
+
+.transitionsHead li:nth-child(4){
+	padding-left: 31px;
+}
+
+.transitionsHead li:nth-child(5){
+	padding-left: 23px;	
+}
+
+.transitionsHead a{
+	text-decoration: none;
+}
+
+.transitionsHead li a:hover {
+	color: #F28F1B;
+}
+
+.infoHead{
+	padding-left: 157px;
+	padding-top: 109px;
+	width: 530px;
+}
+
+.infoHead h1{
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 52px;
+	color: #30529F;
+}
+
+.infoHead p{
+	padding-left: 0px;
+	padding-top: 6px;
+	font-family: "Century Gothic";
+	color: #212F50;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.infoHead button{
+	margin-top: 12px;
+	width: 160px;
+	height: 40px;
+	border: none;
+	border-radius: 10px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+	background: rgba(48, 82, 159, 0.2);;
+	color: #30529F;
+}
+
+.infoHead button.payHead{
+	background: #F39C37;
+	color: white;
+}
+.calcHead{
+	width: 200px;
+	margin-left: 27px;
+}
+
+.infoHead button:hover{
+	opacity: 0.7;
+}
+
+ /* для элемента input c type="radio" */
+  .custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  /* для элемента label связанного с .custom-radio */
+  .custom-radio+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  /* создание в label псевдоэлемента  before со следующими стилями */
+  .custom-radio+label::before {
+    content: '';
+    display: inline-block;
+    height: 12px;
+	width: 12px;
+	background: #E6EBF4;
+	border-radius: 50%;
+	border: none;
+	margin: 5px;
+  }
+  /* стили при наведении курсора на радио */
+  .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+    height: 12px;
+	width: 12px;
+	background: #A9B6D7;
+	border-radius: 50%;
+	border: none;
+	transform: scale(1.5);
+  }
+  /* стили для радиокнопки, находящейся в состоянии checked */
+  .custom-radio:checked+label::before {
+    height: 12px;
+	width: 12px;
+	background: #30529F;
+	border-radius: 50%;
+	border: none;
+  }
+
+.infoBlockTwo{
+	width: 550px;
+	padding-left: 700px;
+}
+
+.infoBlockTwo h1{
+	font-size: 36px;
+	line-height: 44px;
+	margin-top: 12px;
+	margin-left: 27px;
+	color: #30529F;
+	width: 600px;
+}
+
+.infoBlockTwo p{
+	font-family: 'Century Gothic';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 33px;
+	margin-left: 27px;
+	width: 430px;
+}
+
+
+.infoBlockTwo p.infoTwoP{
+	margin-top: -5px;
+}
+
+.infoBlockTwo button{
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 170px;
+	height: 40px;
+	border: none;
+	border-radius: 10px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+	background: #F5F5F5;
+	color: rgba(48, 82, 159, 0.57);
+}
+
+.infoBlockTwo button.payHead{
+	width: 160px;
+	background: #F39C37;
+	color: white;
+	margin-left: 26px;
+}
+
+.infoBlockTwo button:hover{
+	opacity: 0.7;
+}
+
+
+.listFoot{
+	display: inline-flex;
+	margin-left: 722px;
+	margin-top: 189px;
+
+}
+
+.blockTwoInfo{
+	z-index: 10;
+}
+
+.twoBlockImg{
+	position: absolute;
+	z-index: -2;
+}
+
+.twoBlockImg .animal{
+	position: absolute;
+	top: 149px;
+	left: 189px;
+	z-index: -2;
+}
+
+.twoBlockImg .label{
+	position: absolute;
+	top: 432px;
+	left: 98px;
+	z-index: -2;
+}
+
+.twoBlockImg .cormLabel{
+	position: absolute;
+	top: 470px;
+	left: 120px;
+	z-index: -1;
+}
+
+.twoBlockImg .corm{
+	position: absolute;
+	left: 314px;
+	top: 243px;
+}
+.twoBlockImg .wapper{
+	position: absolute;
+	z-index: -3;
+	top: 50px;
+	left: -100px;
+	width: 1000px;
+	height: 550px;
+	color: hotpink;
+}
