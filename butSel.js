@@ -1,5 +1,9 @@
 let butRev = document.querySelector("#navButtonRev");
 let but = document.querySelector("#navButton");
+let tabBtn = document.querySelector("#close-btn");
+let infoBtn = document.querySelector("#info-btn");
+let tab = document.querySelector("#divTab");
+
 chickenN.checked ="true"
 
 function transformMas(anim){
@@ -26,7 +30,7 @@ function transformMas(anim){
 			textLabel.style.top="520px"
 			textLabel.style.left="150px"
 		}
-		pathVal.attributes[1].value = masAnim[p].texts.fill;
+		pathVal.attributes[1].value = anim.texts.fill;
 		
 	}
 }
@@ -59,3 +63,10 @@ butRev.onclick = function() {
 	}
 };
 
+infoBtn.onclick = function() {
+	tab.style.display = "block";
+}
+
+tabBtn.onclick = function() {
+	tab.style.display = "none";
+}
