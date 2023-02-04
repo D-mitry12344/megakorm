@@ -13,6 +13,7 @@ html{
 }
 
 body{
+	overflow-x: hidden;
 	background-color: #f6f7fb;
 	font-family: "Century Gothic Bold";
 }
@@ -1038,20 +1039,22 @@ footer div {
 	margin-top: 10px;
 }
 
+.transitionsHead{
+	z-index: 2;
+}
+
 .headerWap .wapHead{
 	position: absolute;	
+	z-index: 1;
 }
 
 
 .headerWap {
 	position: absolute;
-	display: block;
-	width: 100%;
-	left: 200px;
-	z-index: -1;
+	width: 120%;
+	left: 400px;
+	top: -200px;
+	z-index: 1;
 }
 
 
-.parallaxPig{
-	width: 500px;
-}
