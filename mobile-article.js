@@ -6,7 +6,7 @@ function createBtn(){
   if(window.innerWidth < 1000){
   	liFirst.innerHTML=`
   		<div style="position: absolute;
-	top: 4300px; left:300px;">
+	margin-top: 650px; margin-left:-30px;">
 					<image id="sevBtnRev" class="blockTwoBut blockTwoButRev" src="img/Subtract.png"></image>
 					<image id="sevBtn" class="blockTwoBut" src="img/Subtract.png"></image>	
 				</div>	`

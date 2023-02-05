@@ -1,5 +1,5 @@
 let blockThred = document.querySelector(".blockThreed")
-let liFirst = document.createElement('div');
+let divFirst = document.createElement('div');
 let infoFive = document.querySelector(".infoBlockFive p");
 let infoSeven = document.querySelector(".headerBlock p");
 let pigger =document.querySelector("#pigger");
@@ -7,18 +7,18 @@ let headerWap = document.querySelector(".headerWap")
 function createBlocks(){
   if(window.innerWidth < 1000){
     pigger.attributes[7].nodeValue ="./img/mobilePig.png"
-  infoFive.textContent=`Кормовая компания «МЕГАМИКС» — крупнейший российский производитель премиксов и комбикормов для всех видов сельскохозяйственных животных и птиц.
-  Сегодня «МЕГАМИКС» ставит перед собой более высокие требования к безопасности и качеству выпускаемой продукции, поддержанию деловой репутации, чем это определено в российском законодательстве и принято на рынке.`
-  let oneP=`Мы собрали полезные статьи, схемы кормления и другие материалы, которые помогут вам добиться луших результатов.`
-  let twoP = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.`;
-  infoSeven.innerHTML=`Мы собрали полезные статьи, схемы кормления и другие материалы, которые помогут вам добиться луших результатов.<br><br>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.`
-  liFirst.innerHTML =`
-          <div id="bildThreed" style="display: flex;
+    infoFive.textContent=`Кормовая компания «МЕГАМИКС» — крупнейший российский производитель премиксов
+       и комбикормов для всех видов сельскохозяйственных животных и птиц.
+        Сегодня «МЕГАМИКС» ставит перед собой более высокие требования к безопасности и качеству выпускаемой продукции,
+        поддержанию деловой репутации, чем это определено в российском законодательстве и принято на рынке.`
+    infoSeven.innerHTML=`Мы собрали полезные статьи, схемы кормления и другие материалы, которые помогут вам добиться луших результатов.<br><br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.`;
+    divFirst.innerHTML =`<div id="bidThreed" style="display: flex;
                                   position:absolute;
                                   width:100px;
-                                  margin-left: 50px;
-                                  margin-top: 350px;
+                                  margin-top:370px;
+                                  margin-left:50px;
+                                  z-index:1;
                                    ">
             <div class="radio" style="margin:0px;">
                 <input " class="custom-radio" type="radio" id="block1" name="blocks" value="1">
@@ -45,7 +45,7 @@ function createBlocks(){
                 <label for="block6"></label>
               </div>         
           </div>`;
-  blockThred.prepend(liFirst);
+  blockThred.prepend(divFirst);
   }
 }
 createBlocks();
@@ -61,9 +61,8 @@ let blockCow =document.querySelector("#blockCow");
 let blockRab =document.querySelector("#blockRab");
 let blockBirds =document.querySelector("#blockBirds");
 let blockDuck =document.querySelector("#blockDuck");
-let bildThreed = document.querySelector("#bildThreed")
+let bildThreed = document.querySelector("#bidThreed")
 let masBlocks =[block1, block2, block3 ,block4, block5 ,block6]
-block1.checked = true;
 block1.onclick = transitionBlocks;
 block2.onclick = transitionBlocks;
 block3.onclick = transitionBlocks;
@@ -71,7 +70,6 @@ block4.onclick = transitionBlocks;
 block5.onclick = transitionBlocks;
 block6.onclick = transitionBlocks;
 function transitionBlocks(){
-  if(this.checked == true){
     for(let i =0 ;i<masBlocks.length ; i++){
       blockPig.style.display="none";
       blockCow.style.display="none";
@@ -96,7 +94,7 @@ function transitionBlocks(){
       if(this == masBlocks[3]){
         blockPig.style.display="none";
         blockRab.style.display = "block"
-        bildThreed.style.marginTop="450px"
+        bildThreed.style.marginTop="50px"
       }
       if(this == masBlocks[4]){
         blockPig.style.display="none";
@@ -107,6 +105,6 @@ function transitionBlocks(){
         blockDuck.style.display = "block"
       }
     }
-  }
+  
 
 }
