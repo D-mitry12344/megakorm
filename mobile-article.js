@@ -6,7 +6,7 @@ function createBtn(){
   if(window.innerWidth < 1000){
   	liFirst.innerHTML=`
   		<div style="position: absolute;
-	top: 4300px; left:-10px;">
+	top: 4300px; left:300px;">
 					<image id="sevBtnRev" class="blockTwoBut blockTwoButRev" src="img/Subtract.png"></image>
 					<image id="sevBtn" class="blockTwoBut" src="img/Subtract.png"></image>	
 				</div>	`
@@ -21,11 +21,15 @@ let q =0;
 sevBtn.onclick = transitionArticle;
 function transitionArticle(){
 	if(q>=0){
-	masArt[q].style.display= "none";
+		if(q==0){masArt[q].style.display= "none";
 	let i =	1;
-	masArt[i].style.display= "block";
+	masArt[i].style.display= "block";}
+	
 	
 	if(q>=1){
+		if(q==1){masArt[q].style.display= "none";
+	let i =	2;
+	masArt[i].style.display= "block";}
 		if(q==2){
 			masArt[q].style.display= "none";
 			let i =	0;
@@ -33,9 +37,7 @@ function transitionArticle(){
 			
 	
 		}
-		masArt[q].style.display= "none";
-		let i =	2;
-		masArt[i].style.display= "block";
+		
 		
 	}
 	}
@@ -48,24 +50,28 @@ function transitionArticle(){
 }
 sevBtnRev.onclick = transitionArticleRev;
 function transitionArticleRev(){
-	if(q>=0){
-	masArt[q].style.display= "none";
-	let i =	2;
-	masArt[i].style.display= "block";
 	
-	if(q>=1){
+		if(q==0){masArt[q].style.display= "none";
+				let i =	2;
+				masArt[i].style.display= "block";
+			}
+	
+	
+	
+		if(q==1){masArt[q].style.display= "none";
+			let i =	0;
+			masArt[i].style.display= "block";
+		}
 		if(q==2){
 			masArt[q].style.display= "none";
 			let i =	1;
 			masArt[i].style.display= "block";
 			
 	
-		}
-		masArt[q].style.display= "none";
-		let i =	0;
-		masArt[i].style.display= "block";
 		
-	}
+		
+		
+	
 	}
 	if(q>0 || q==0){
 		q = q-1;

@@ -14,7 +14,7 @@ html{
 	
 }
 
-body{width: 371px;
+body{
 	overflow-x: hidden;
 	background-color: #f6f7fb;
 	font-family: "Century Gothic Bold";
@@ -38,29 +38,11 @@ footer{
 }
 
 header div{
-	z-index: 1;
-}
-
-.pigHead{
-	position: absolute;
-	z-index: -2;
-	left: 600px;
-}
-
-.wapperHead {
-	position: absolute;
-	z-index: -3;
-	top: -140px;
-	left: 500px;
-	width: 3000px;
-	height: 1000px;
-	
+	z-index: 2;
 }
 
 header{
-	background-image: url("../img/wapperBody.png");
-	background-position: 100% 50%;
-	background-repeat: repeat-y;
+	background: none;
 	/*background: url("../img/vectorPig.svg") left 373px
 	top 1px no-repeat;*/
 	width: 371px;
@@ -129,6 +111,7 @@ header{
 	padding-left: 15px;
 	padding-top: 145px;
 	width: 290px;
+	z-index: 2;
 }
 
 .infoHead h1{
@@ -136,9 +119,11 @@ header{
 	font-size: 34px;
 	line-height: 34px;
 	color: #30529F;
+	z-index: 2;
 }
 
 .infoHead p{
+	z-index: 2;
 	padding-left: 0px;
 	padding-top: 15px;
 	font-family: "Century Gothic";
@@ -1144,9 +1129,12 @@ footer div {
 .headerWap {
 	position: absolute;
 	width: 80%;
-	left: -100px;
+	left: 150px;
 	top: -50px;
-	z-index: 1;
+	z-index: -1;
 }
+	.headerWap svg{
+		position: absolute;
+	z-index: 1;
 
 }
