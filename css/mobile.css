@@ -11,7 +11,6 @@
 
 
 html{
- background: red;
 	
 }
 
@@ -24,7 +23,7 @@ body{width: 371px;
 
 
 main{
-	background-image: url("../img/wapperBody.png");
+	background-image: url("../img/wapperBody.png") 50%;
 	background-position: 100% 50% ;
 	background-repeat: repeat-y;
 	width: 371px;
@@ -224,28 +223,28 @@ header{
   }
 
 .infoBlockTwo{
-	width: 550px;
-	padding-left: 700px;
+	width: 55px;
+	padding-left: 70px;
 }
 
 .infoBlockTwo h1{
-	font-size: 36px;
-	line-height: 44px;
-	margin-top: 12px;
-	margin-left: 27px;
+	font-size: 28px;
+	line-height: 32px;
+	margin-top: 375px;
+	margin-left: -55px;
 	color: #30529F;
-	width: 600px;
+	width: 220px;
 }
 
 .infoBlockTwo p{
 	font-family: 'Century Gothic';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
-	line-height: 24px;
-	margin-top: 33px;
-	margin-left: 27px;
-	width: 430px;
+	font-size: 14px;
+	line-height: 22px;
+	margin-top: 55px;
+	margin-left: -55px;
+	width: 330px;
 }
 
 
@@ -261,7 +260,7 @@ header{
 	border: none;
 	border-radius: 10px;
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 24px;
 	text-align: center;
 	background: #F5F5F5;
@@ -269,21 +268,34 @@ header{
 }
 
 .infoBlockTwo button.payHead{
-	width: 160px;
+	width: 212px;
+	height: 40px;
 	background: #F39C37;
 	color: white;
-	margin-left: 26px;
+	margin-top: 10px;
+	margin-left: -57px;
 }
 
 .infoBlockTwo button:hover{
 	opacity: 0.7;
 }
 
+#info-btn{
+	background: none;
+	border: none;
+	width: 170px;
+	height: 40px;
+	position: absolute;
+	top: 1400px;
+	margin-top: -320px;
+	margin-left: -75px;
+}
+
 
 .listFoot{
 	display: inline-flex;
-	margin-left: 722px;
-	margin-top: 189px;
+	margin-left: 90px;
+	margin-top: 30px;
 
 }
 
@@ -293,59 +305,72 @@ header{
 
 .twoBlockImg{
 	position: absolute;
-	z-index: -2;
+	z-index: 1;
 }
 
 .twoBlockImg .animal{
 	position: absolute;
-	top: 149px;
-	left: 189px;
-	z-index: -2;
+	top: 75px;
+	left: 55px;
+	width: 250px;
+	height: 270px;
+	
+	z-index: -1;
 }
 
 .twoBlockImg .label{
 	position: absolute;
-	top: 432px;
-	left: 98px;
-	z-index: -2;
+	top: 262px;
+	left: 10px;
+	z-index: 1;
+	width: 180px;
+	height: 170px;
 }
 
 .twoBlockImg .cormLabel{
 	position: absolute;
-	top: 470px;
-	left: 120px;
-	z-index: -1;
+	    top: 335px;
+    left: 50px;
+    width: 110px;
+    z-index: 2;
 }
 
 .twoBlockImg .corm{
 	position: absolute;
-	left: 314px;
-	top: 243px;
+	left: 130px;
+	top: 135px;
+	width: 308px;
+	height: 260px;
 }
 .twoBlockImg .wapper{
 	position: absolute;
 	z-index: -3;
-	top: 50px;
-	left: -100px;
-	width: 1000px;
-	height: 550px;
+	top: 30px;
+	left: -180px;
+	width: 700px;
+	height: 350px;
 	color: hotpink;
 }
 
 .navImg{
 	position: absolute;
+	top: 1000px;
 }
 
 .blockTwoBut{
  position: absolute;
- top: -200px;
- left: 1230px;
+ border-radius: 15px;
+ left: 330px;
+ width: 35px;
+ height: 35px;
  opacity: 0.6;
+ z-index: 1;
 }
 
 .blockTwoBut:hover{
  opacity: 1;
  transform: scale(1.2);
+ box-shadow: inset 5px 5px 5px 5px  white;
 }
 
 .blockTwoButRev:hover{
@@ -354,15 +379,16 @@ header{
 
 .blockTwoButRev{
 	position: absolute;
-	left: 130px;
+	left: 10px;
 	transform: scale(-1,-1);
 }
 
 .tabInfo{
-	width: 900px;
+	width: 350px;
+	overflow: scroll;
 	position: absolute;
 	top: 60px;
-	left: 20px;
+	left: 0px;
 	overflow-y: scroll;
 	border: 2px solid #CED6E9;
 	border-radius: 8px;
@@ -373,7 +399,7 @@ header{
 .divTab{
 	position: absolute;
 	top: 550px;
-	left: 250px;
+	left: 20px;
 	z-index: 2;
 	display: none;
 }
@@ -385,7 +411,7 @@ header{
 
 .divTab button{
 	position: absolute;
-	left: 870px;
+	left: 290px;
 	top: 20px;
 	z-index: 3;
 	background: url("../img/close-btn.png") no-repeat;
@@ -435,21 +461,21 @@ header{
 	background: white;
 }
 
+
+
 .blockThreed{
-	display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-	width: 900px;
-	height: 800px;
-	margin-top: 152px;
-	margin-left: 162px;
+	display: block;
+  
+	width: 300px;
+	height: 500px;
+	margin-top: 35px;
+	margin-left: 36px;
 }
 
 .topText{
-	grid-column-start: 1;
-  grid-column-end: 4;
 	font-weight: 700;
-	font-size: 36px;
-	line-height: 44px;
+	font-size: 24px;
+	line-height: 28px;
 	text-align: center;
 	color: #30529F;
 }
@@ -470,6 +496,7 @@ header{
 }
 .blockThreed div{
 	display: block;
+	text-align: center;
 	font-family: "Century Gothic";
 	width: 325px;
 	margin: 20px;
@@ -479,15 +506,15 @@ header{
 .blockThreed div h4{
 	font-family: "Century Gothic Bold";
 	font-weight: 700;
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 14px;
+	line-height: 22px;
 	color: #30529F;
 }
 
 .blockThreed div p{
 	font-weight: 400;
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 14px;
+	line-height: 22px;
 	color: #212F50;
 }
 
@@ -499,21 +526,26 @@ header{
 }
 
 #blockPig{
-	margin-left: -5px;
+	display: block;
+	margin-left: 20px;
 }
 #blockPig img{
-	margin-left: -5px;
+	width: 170px;
+	margin-left: -20px;
 	margin-top: 10px;
 }
 #blockPig h4{
-	margin-top: -20px;
+	margin-top: -10px;
+	width: 250px;
 }
 #blockPig p{
 	margin-top: -9px;
+	width: 250px;
 }
 
 #blockChick{
-	margin-left: 35px;
+	display: none;
+	margin-left: -10px;
 }
 #blockChick img{
 	margin-left: -5px;
@@ -521,6 +553,9 @@ header{
 }
 #blockChick h4{
 	margin-top: -10px;
+}
+#blockChick button{
+	margin-left: 60px;
 }
 #blockChick p{
 	margin-top: -9px;
@@ -534,6 +569,10 @@ header{
 }
 
 #blockCow{
+	display: none;
+	margin-left: -10px;
+}
+#blockCow button{
 	margin-left: 20px;
 }
 #blockCow img{
@@ -562,6 +601,7 @@ header{
 }
 
 #blockRab{
+	display: none;
 	margin-left: -5px;
 }
 #blockRab img{
@@ -589,7 +629,8 @@ header{
 }
 
 #blockBirds{
-	margin-left: 35px;
+	display: none;
+	margin-left: -10px;
 }
 #blockBirds img{
 	margin-left: -5px;
@@ -604,7 +645,8 @@ header{
 }
 
 #blockDuck{
-	margin-left: 35px;
+	display: none;
+	margin-left: -10px;
 }
 #blockDuck img{
 	margin-left: -5px;
@@ -619,24 +661,28 @@ header{
 }
 
 
+
+
 .blockFour{
-	margin-top: 228px;
-	margin-left: 160px;
+	margin-top: -50px;
+	margin-left: 16px;
+	height: 900px;
 }
 
 .nameBlock{
+	width: 320px;
 	font-weight: 700;
-	font-size: 48px;
-	line-height: 44px;
+	font-size: 34px;
+	line-height: 34px;
 	color: #30529F;
 }
 
 .infoBlockFour{
 	font-family: "Century Gothic";
-	width: 440px;
+	width: 340px;
 	font-weight: 400;
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 14px;
+	line-height: 22px;
 	color: #212F50;
 	padding-top: 5px;
 	margin-left: 0px;
@@ -670,18 +716,18 @@ header{
 }
 
 .calcDiv{
-	margin-top: -30px;
+	margin-top: -25px;
 	font-weight: 700;
-	font-size: 32px;
-	line-height: 0px;
+	font-size: 20px;
+	line-height: 0px;;
 	color: #30529F;
 }
 
 
 .calcDiv img{
-	width: 25px;
-	height: 25px;
-	margin-bottom: 5px;
+	width: 20px;
+	height: 20px;
+	margin-bottom: 0px;
 }
 
 img#nav-one{
@@ -689,22 +735,22 @@ img#nav-one{
 }
 
 img#nav-two{
-	margin-left: -30px;
+	margin-left: -20px;
 }
 
 img#nav-three{
-	margin-left: -30px;
+	margin-left: -20px;
 }
 
 .calcDiv input{
 	background: transparent;
 	border: none;
 	outline: none;
-	width: 150px;
+	width: 100px;
 	margin-left: 0px;
 	margin-right: 0px;
 	font-weight: 700;
-	font-size: 64px;
+	font-size: 38px;
 	line-height: 0px;
 	color: #30529F;
 }
@@ -719,65 +765,73 @@ img#nav-three{
 
 
 .total h1{
+	position: absolute;
 	font-weight: 700;
-	font-size: 48px;
+	font-size: 34px;
 	line-height: 48px;
 	color: white;
-	padding-top: 60px;
+	padding-top: 20px;
+	padding-left: 50px;
+	z-index: 2;
 }
 
 .total div{
-	width: 280px;
-	height: 280px;
+	width: 20px;
+	height: 20px;
+	width: 100px;
 	text-align: center;
 	background-size: contain;
 	position: absolute;
 }
 
 .total p{
+	padding-top: 70px;
+	padding-left: 50px;
+	position: absolute;
 	font-weight: 700;
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 16px;
+	line-height: 20px;
 	color: white;
+	z-index: 2;
 }
 
 .minMas{
-	top: -250px;
-	left: 580px;
+	top: 120px;
+	left: -20px;
 }
 
 .minMas svg{
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	z-index: -1;
-	width: 280px;
+	z-index: 1;
+	width: 200px;
 }
 
 .midMas svg{
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	z-index: -1;
-	width: 300px;
+	z-index:1;
+	width: 200px;
 }
 
 .maxMas svg{
 	position: absolute;
 	top: 0px;
-	left: -50px;
-	z-index: -1;
-	width: 400px;
+	left: 0px;
+	z-index: 1;
+	width: 200px;
 }
 
 .midMas{
-	top: -430px;
-	left: 470px;
+	top: -30px;
+	left: -30px;
 }
 
 .maxMas{
-	top: -550px;
-	left: 750px;
+	top: -30px;
+	left: 160px;
 	width: 250px;
 	height: 350px;
 	text-align: center;
@@ -786,20 +840,23 @@ img#nav-three{
 
 .total img{
 	position: absolute;
-	top: -400px;
-	left: 750px;
+	top: 60px;
+	left: 80px;
+	width: 250px;
 	z-index: 2;
 }
 
+
 .blockFive{
-	margin-top: 200px;
+	height: 900px;
+	margin-top: 0px;
 }
 
 .sciencer{
 	position: absolute;
-	width: 700px;
-	margin-left: -100px;
-	margin-top: -100px;
+	width: 400px;
+	margin-left:	-120px;
+	margin-top: 450px;
 }
 
 .sciencer svg{
@@ -814,15 +871,16 @@ img#nav-three{
 }
 
 .infoBlockFive{
-	width: 600px;
-	margin-left: 633px;
+	width: 320px;
+	margin-top: -45px;
+	margin-left: 20px;
 
 }
 
 .infoBlockFive h1{
 	font-weight: 700;
-	font-size: 36px;
-	line-height: 44px;
+	font-size: 28px;
+	line-height: 32px;
 	color: #30529F;
 	padding-top: 10px;
 }
@@ -830,16 +888,17 @@ img#nav-three{
 .infoBlockFive p{
 	font-family: "Century Gothic";
 	font-weight: 400;
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 14px;
+	line-height: 22px;;
 	color: #212F50;
 	padding-top: 10px;
 
 }
 
 .dignityComp{
-	width: 600px;
-	display: flex;
+		width: 410px;
+		display: flex;
+	flex-wrap: wrap;
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 24px;
@@ -849,10 +908,10 @@ img#nav-three{
 }
 
 .dignityComp div{
-	width: 250px;
+	width: 150px;
 	padding:0px 10px;
 	text-align: left;
-	margin-left: -15px;
+	margin-left: 5px;
 }
 
 .dignityComp h1{
@@ -865,18 +924,20 @@ img#nav-three{
 .dignityComp p{
 	margin-top: -40px;
 	font-weight: 700;
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 16px;
+	line-height: 20px;
 	color: #F28F1B;
 }
 
 
 
 .mapHref{
+
 	margin-left: -7px;
 	margin-top: 10px;
 	width: 250px;
 	display: flex;
+	display: none;
 	background: transparent;
 	border: none;
 }
@@ -902,7 +963,8 @@ button{
 
 .blockSeven{
 	display: flex;
-	margin-left: 140px;
+	flex-wrap: wrap;
+	margin-left: 10px;
 }
 
 .blockSeven div{
@@ -910,8 +972,16 @@ button{
 	margin:20px 15px;
 }
 
+#science{
+	display: none;
+}
+
+#korms{
+	display: none;
+}
+
 .blockSeven #blobSvg{
-	margin-left: -30px;
+	margin-left: 0px;
 }
 
 .blockSeven div h1{
@@ -943,15 +1013,16 @@ button{
 }
 
 .blockSeven .headerBlock{
-	margin: 20px;
+	width: 350px;
+	margin: 10px;
 }
 
 .blockSeven .headerBlock p{
 	font-family: 'Century Gothic';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 14px;
+	line-height: 22px;
 	color: #212F50;
 	padding-top: 10px;
 	margin-left: -2px;
@@ -959,8 +1030,8 @@ button{
 
 .blockSeven .headerBlock h1{
 	font-weight: 700;
-	font-size: 36px;
-	line-height: 44px;
+	font-size: 28px;
+	line-height: 32px;
 	color: #30529F;
 }
 
@@ -988,13 +1059,16 @@ button{
 
 footer div {
 	display: flex;
-	margin-left: 100px;
-	margin-top: 40px;
+	flex-wrap: wrap;
+	margin-left: 10px;
+	margin-top: 0px;
 }
 
 .company{
 	display: block;
-	width: 500px;
+	width: 200px;
+	margin-top: 100px;
+	margin-left: 20px;
 }
 
 .company p{
@@ -1003,6 +1077,7 @@ footer div {
 	line-height: 16px;
 	color: #869AC7;
 	margin-top: -20px;
+	text-align: center;
 }
 
 .company .nameComp{
@@ -1016,10 +1091,11 @@ footer div {
 
 .correct{
 	display: flex;
+	flex-wrap: wrap;
 	position: absolute;
-	margin-left: 580px;
+	margin-left: 40px;
 	width: 200px;
-	margin-top: 30px;
+	margin-top: 40px;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 16px;
@@ -1030,27 +1106,29 @@ footer div {
 	position: absolute;
 	padding-top: 35px;
 	margin-left: 160px;
-	width: 10px;
-	height: 10px;
+	width: 5px;
+	height: 5px;
+
 }
 
 .social{
-	width: 500px;
+	width: 350px;
 	height: 100px;
 	padding: 20px;
-	margin-top: 15px;
-	margin-left: 500px;
+	margin-top: -250px;
+	margin-left: -20px;
 }
 
 .social svg{
 	position: absolute;
-	width: 80px;
+	width: 50px;
 	margin-top: -10px;
 }
 
 .social img{
+	width: 20px;
 	position: absolute;
-	margin-top: 10px;
+	margin-top: 0px;
 }
 
 .transitionsHead{
@@ -1065,9 +1143,9 @@ footer div {
 
 .headerWap {
 	position: absolute;
-	width: 120%;
-	left: 400px;
-	top: -200px;
+	width: 80%;
+	left: -100px;
+	top: -50px;
 	z-index: 1;
 }
 

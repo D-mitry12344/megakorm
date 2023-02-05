@@ -28,7 +28,7 @@
                             preserveAspectRatio="none">
                         </image>
 
-                        <image class="parallaxPig" x="100" y="170" width="50%" height="50%"
+                        <image id="pigger" class="parallaxPig" x="100" y="170" width="50%" height="50%"
                             clip-path="url(#shapeWelcomePig)" xlink:href="./img/pigHead.png"
                             preserveAspectRatio="none">
                         </image>
@@ -590,7 +590,7 @@
 						Собрали для вас полезные исследования наших научных сотрудников, схемы кормления и другие материалы, которые пригодятся для лучших результатов на вашем предприятии.
 					</p>
 				</div>
-				<div>
+				<div id="eggs">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="120%"
                                 id="blobSvg" style="opacity: 1;">
                                 <defs>
@@ -616,7 +616,7 @@
 					<p class="clickbait">Витамины необходимы курам яичного направления для нормальной жизнедеятельности и увеличения продуктивного периода.</p>
 					<button class="article-btn">Читать дальше</button>
 				</div>
-				<div>
+				<div id="science">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="120%"
                                 id="blobSvg" style="opacity: 1;">
                                 <defs>
@@ -641,7 +641,7 @@
 					<p class="data">12 мая 2022</p>
 					<p class="clickbait">Витамины необходимы курам яичного направления для нормальной жизнедеятельности и увеличения продуктивного периода.</p>
 				</div>
-				<div>
+				<div id="korms">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="120%"
                                 id="blobSvg" style="opacity: 1;">
                                 <defs>
@@ -687,7 +687,7 @@
                                         </animate>
                                     </path>
                                </svg>
-					<img style="margin-left: 15px; margin-top: 15px;" src="img/mail.png">
+					<img style="margin-left: 15px; margin-top: 5px;" src="img/mail.png">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="2%"
                                 id="blobSvg" style="opacity: 1; margin-left: 70px;">
                                     <path id="blob" fill="#99E1EF" style="opacity: 1;">
@@ -696,7 +696,7 @@
                                         </animate>
                                     </path>
                                </svg>
-					<img style="margin-left: 85px; margin-top: 15px;" src="img/telegram.png">
+					<img style="margin-left: 85px; margin-top: 5px;" src="img/telegram.png">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="2%"
                                 id="blobSvg" style="opacity: 1;margin-left: 140px;">
                                     <path id="blob" fill="#8A9CC6" style="opacity: 1; ">
@@ -705,7 +705,7 @@
                                         </animate>
                                     </path>
                                </svg>
-					<img style="margin-left: 155px; margin-top: 15px;" src="img/vk.png">
+					<img style="margin-left: 155px; margin-top: 5px;" src="img/vk.png">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="2%"
                                 id="blobSvg" style="opacity: 1;margin-left: 210px;">
                                     <path id="blob" fill="#AA89C0" style="opacity: 1; ">
@@ -721,6 +721,9 @@
 		<script src="index.js"></script>
 		<script src="butSel.js"></script>
 		<script src="calc.js"></script>
+		<script src="mobileSel.js"></script>
+		<script src="mobileBlockThreed.js"></script>
+		<script src="mobile-article.js"></script>
 		<!--<script src="mouse.js"></script>-->
 	</body>
 </html>

@@ -1,16 +1,13 @@
-let butRev = document.querySelector("#navButtonRev");
-let but = document.querySelector("#navButton");
-let tabBtn = document.querySelector("#close-btn");
-let infoBtn = document.querySelector("#info-btn");
-let tab = document.querySelector("#divTab");
+
 
 chickenN.checked ="true"
 
 function transformMas(anim){
-	if(window.innerWidth>1000){
+	if(window.innerWidth < 1000){
 	if(anim.checked == true){
-		textLabel.style.top= "470px";
-		textLabel.style.left = "120px";
+		infoBtn.style.top="1400px"
+		textLabel.style.top= "335px";
+		textLabel.style.left = "50px";
 		infoH1.textContent = anim.texts.h1;
 		infoP1.textContent =anim.texts.p1;
 		infoP2.textContent =anim.texts.p2;
@@ -19,23 +16,30 @@ function transformMas(anim){
 		label.src = anim.texts.img3;
 		textLabel.src="";
 		if(anim == duck){
-			textLabel.src="img/duck/textLabel.png"
+			textLabel.src="img/duck/textLabel.png";
+			label.style.height="150px";
+			textLabel.style.top="315px"
+
 		};
 		if(anim == chickenLay){
-			corm.style.left="250px";
-			animal.style.top="100px"
+			/*corm.style.left="250px";
+			animal.style.top="100px"*/
+			label.style.height="150px";
+			textLabel.style.width="110px";
+			textLabel.style.top="315px"
+			infoBtn.style.top="1430px"
 			textLabel.src="img/chickLay/textLabel.png"
 		}
 		if(anim == cow){
 			textLabel.src="img/cow/textLabel.png";
-			textLabel.style.top="520px"
-			textLabel.style.left="150px"
+			/*textLabel.style.top="520px"
+			textLabel.style.left="150px"*/
+			infoBtn.style.top="1450px"
 		}
 		pathVal.attributes[1].value = anim.texts.fill;
 		
 	}
-}
-}
+}}
 
 but.onclick = function() {
 	for(let i =0 ; i< masAnim.length ; i++){

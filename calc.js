@@ -1,11 +1,11 @@
 let totalKorm  = document.querySelector("#totalMasKorm");
 let numbUser = document.querySelector("#numberUser");
-numbUser.onchange = function() {
+numbUser.oninput = function() {
 	if(numbUser.value > 9999){
 		numbUser.value = 9999;
 	}
 	if(numbUser.value == 0){
-		numbUser.value = 300;
+		numbUser.value = 30;
 	}
 	totalKorm.textContent= Math.round(numbUser.value * 5.1) +" кг корма";
 }
