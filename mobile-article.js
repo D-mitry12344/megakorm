@@ -2,11 +2,12 @@ let eggs = document.querySelector("#eggs");
 let science = document.querySelector("#science");
 let korms = document.querySelector("#korms");
 let blockSev = document.querySelector(".blockSeven");
+let liFirst = document.createElement('div')
 function createBtn(){
   if(window.innerWidth < 1000){
   	liFirst.innerHTML=`
   		<div style="position: absolute;
-	margin-top: 650px; margin-left:-30px;">
+	margin-top: 450px; margin-left:-30px;">
 					<image id="sevBtnRev" class="blockTwoBut blockTwoButRev" src="img/Subtract.png"></image>
 					<image id="sevBtn" class="blockTwoBut" src="img/Subtract.png"></image>	
 				</div>	`

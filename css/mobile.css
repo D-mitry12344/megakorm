@@ -338,7 +338,7 @@ header{
 
 .navImg{
 	position: absolute;
-	top: 1000px;
+	top: 800px;
 }
 
 .blockTwoBut{
@@ -382,8 +382,11 @@ header{
 
 .divTab{
 	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+
 	top: 550px;
-	left: 20px;
+
 	z-index: 2;
 	display: none;
 }
@@ -1136,4 +1139,50 @@ footer div {
 		position: absolute;
 	z-index: 1;
 
+}
+
+.selNav{
+	background: rgb(255,255,255,0.5);
+	color: #30529F;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	list-style: none;
+	position:absolute;
+	display: none;
+	transition: margin-left 10s;
+	text-align: right;
+	width: 100px;
+	padding-right: 20px;
+	margin-left: 200px;
+	margin-top: 30px;
+
+}
+
+.selNav a{
+	outline: none;
+	text-decoration: none;
+}
+
+.selNav a:visited {
+	outline: none;
+	color: #30529F;
+	text-decoration: none;
+}
+
+#btnUl{
+	transition: 0.3s;
+}
+
+.selNav li:hover{
+	opacity: 0.6;
+	border-radius: 10px;
+	padding-right: 10px;
+	color: rgb(255,255,255,0.8);
+	background: rgb(0,0,0,0.3);
+}
+a{
+		outline: none;
+	text-decoration: none;
+}
 }

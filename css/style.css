@@ -18,7 +18,12 @@ body{
 	font-family: "Century Gothic Bold";
 }
 
-
+#map{
+	width: 1360px;
+	height: 1000px;
+	padding: 0;
+	 margin: 0;
+}
 
 main{
 	background-image: url("../img/wapperBody.png");
@@ -119,9 +124,11 @@ header{
 }
 
 .infoHead{
+	position: relative;
 	padding-left: 157px;
 	padding-top: 109px;
 	width: 530px;
+	z-index: 10;
 }
 
 .infoHead h1{
@@ -320,13 +327,15 @@ header{
 
 .navImg{
 	position: absolute;
+	top: 950px;
 }
 
 .blockTwoBut{
  position: absolute;
- top: -200px;
+ 
  left: 1230px;
  opacity: 0.6;
+ z-index: ;
 }
 
 .blockTwoBut:hover{
@@ -1056,5 +1065,36 @@ footer div {
 	top: -200px;
 	z-index: 1;
 }
+a{
+		outline: none;
+	text-decoration: none;
+}
 
 
+
+
+ymaps.ymaps-2-1-79-zoom__plus.ymaps-2-1-79-zoom__button.ymaps-2-1-79-float-button.ymaps-2-1-79-user-selection-none{
+	width: 60px;
+	height: 60px;
+	top: -60px;
+	background: transparent;
+	box-shadow: none;
+}
+ymaps.ymaps-2-1-79-zoom__minus.ymaps-2-1-79-zoom__button.ymaps-2-1-79-float-button.ymaps-2-1-79-user-selection-none{
+	width: 60px;
+	height: 60px;
+	background: transparent;
+	box-shadow: none;
+}
+ymaps.ymaps-2-1-79-zoom__minus ymaps.ymaps-2-1-79-zoom__icon.ymaps-2-1-79-float-button-icon{
+background-image: url('../img/min.png');
+background-size: cover;
+width: 45px;
+height: 45px;
+}
+ymaps.ymaps-2-1-79-zoom__plus ymaps.ymaps-2-1-79-zoom__icon.ymaps-2-1-79-float-button-icon{
+		background-image: url('../img/max.png');
+background-size: cover;
+width: 45px;
+height: 45px;
+}

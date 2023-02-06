@@ -7,8 +7,8 @@ let tab = document.querySelector("#divTab");
 chickenN.checked ="true"
 
 function transformMas(anim){
-	if(window.innerWidth>1000){
-	if(anim.checked == true){
+	if(window.innerWidth > 1000){
+	
 		textLabel.style.top= "470px";
 		textLabel.style.left = "120px";
 		infoH1.textContent = anim.texts.h1;
@@ -33,7 +33,7 @@ function transformMas(anim){
 		}
 		pathVal.attributes[1].value = anim.texts.fill;
 		
-	}
+	
 }
 }
 
@@ -45,7 +45,7 @@ but.onclick = function() {
 				p = 0;	
 			}
 			masAnim[p].checked = true;
-			transformMas(masAnim[p])
+			transformMas(masAnim[p]);
 			break
 		}
 	}

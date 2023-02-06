@@ -2,8 +2,8 @@
 
 chickenN.checked ="true"
 
-function transformMas(anim){
-	if(window.innerWidth < 1000){
+function transformSel(anim){
+	
 	if(anim.checked == true){
 		infoBtn.style.top="1400px"
 		textLabel.style.top= "335px";
@@ -38,10 +38,12 @@ function transformMas(anim){
 		}
 		pathVal.attributes[1].value = anim.texts.fill;
 		
-	}
+	
 }}
 
-but.onclick = function() {
+function mobileSel(){
+	if(window.innerWidth < 1000){
+	but.onclick = function() {
 	for(let i =0 ; i< masAnim.length ; i++){
 		if(masAnim[i].checked == true){
 			let p = +i + 1;
@@ -49,7 +51,7 @@ but.onclick = function() {
 				p = 0;	
 			}
 			masAnim[p].checked = true;
-			transformMas(masAnim[p])
+			transformSel(masAnim[p])
 			break
 		}
 	}
@@ -63,16 +65,11 @@ butRev.onclick = function() {
 				p = 7;
 			}
 			masAnim[p].checked = true;
-			transformMas(masAnim[p])
+			transformSel(masAnim[p])
 			break;
 		}
 	}
-};
-
-infoBtn.onclick = function() {
-	tab.style.display = "block";
+};}
 }
 
-tabBtn.onclick = function() {
-	tab.style.display = "none";
-}
+mobileSel();
