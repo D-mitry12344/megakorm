@@ -6,6 +6,9 @@
 		<link rel="stylesheet" href="css/mobile.css">
 	</head>
 	<body>
+		<div class="animationLoader">
+  			<div class="animationLoader__image"></div>
+		</div>
 		<header>			
 			<div class="labelHead">
 				<div class="headerWap">
@@ -41,19 +44,19 @@
 				</div>
 				<ul class="transitionsHead">
 					<li>
-						<a href="#">наши корма</a>
+						<a href="#blockTwo">наши корма</a>
 					</li>
 					<li>
-						<a href="#">калькулятор</a>
+						<a href="#blockFour">калькулятор</a>
 					</li>
 					<li>
-						<a href="#">как купить</a>
+						<a href="#blockMap">как купить</a>
 					</li>
 					<li>
-						<a href="#">о нас</a>
+						<a href="#blockFive">о нас</a>
 					</li>
 					<li>
-						<a href="#">полезные статьи</a>
+						<a href="#blockSeven">полезные статьи</a>
 					</li>
 				</ul>
 			</div>
@@ -69,8 +72,8 @@
 			</div>
 			</div>
 		</header>
-		<main>
-			<div id="blockTwo" class="blockTwo">
+		<main >
+			<div id="blockTwo" class="blockTwo" >
 				<div class="twoBlockImg">
 					<image class="animal" src="img/chickenN.png"></image>
 					<image class="corm" src="img/cormChick.png"></image>
@@ -395,7 +398,7 @@
 					<image src="img/blockThreed/chiken.webp" width="200px"></image>
 					<h4>Легко купить. Легко использовать </h4>
 					<p>Выпускается в удобной упаковке. Доступен в большинстве регионов  с доставкой. </p>
-					<a href="#"><button>
+					<a href="#blockMap"><button>
 						<image id="img-b" src="img/blockThreed/map.png"></image>
 						<p>Карта дистрибьютеров</p>
 						<image id="img-btn" src="img/blockThreed/btn.png"></image>
@@ -581,10 +584,17 @@
 						</button></a>
 				</div>
 			</div>
-			<div>
-				<img src="">
+			<div id="blockMap">
+				<h1>Наши дистрибьютеры</h1>
+				<div id="map-btn">
+					<a href="#blockTwo"><button>наши корма</button></a>
+					<a href="#blockFour"><button>калькулятор</button></a>
+					<a href="#"><button>как купить</button></a>
+					<a href="#blockFive"><button>о нас</button></a>
+					<a href="#blockSeven"><button>полезные статьи</button></a>
+				</div>
 				<div style="margin-bottom: 50px; z-index: 2; position: relative;">
-					<select style="overflow: scroll;" name="" id="selectReg">
+					<select id="selectReg">
 						<option selected disabled>Выберите область</option>
 						<option value="Астрахань">Астраханская область</option>
 						<option value="Белгород">Белгородская область</option>
@@ -707,7 +717,7 @@
                                         </animate>
                                     </path>
                                </svg>
-					<img style="margin-left: 85px; margin-top: 5px;" src="img/telegram.png"></a>
+					<img style="margin-left: 85px; margin-top: 8px;" src="img/telegram.png"></a>
 					<a href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="2%"
                                 id="blobSvg" style="opacity: 1;margin-left: 140px;">
                                     <path id="blob" fill="#8A9CC6" style="opacity: 1; ">
@@ -716,7 +726,7 @@
                                         </animate>
                                     </path>
                                </svg>
-					<img style="margin-left: 155px; margin-top: 5px;" src="img/vk.png"></a>
+					<img style="margin-left: 155px; margin-top: 8px;" src="img/vk.png"></a>
 					<a href="#"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="2%"
                                 id="blobSvg" style="opacity: 1;margin-left: 210px;">
                                     <path id="blob" fill="#AA89C0" style="opacity: 1; ">
@@ -725,20 +735,29 @@
                                         </animate>
                                     </path>
                                </svg>
-					<img style="margin-left: 225px;" src="img/tiktok.png"></a>
+					<img style="margin-left: 229px; margin-top:5px;" src="img/tiktok.png"></a>
 				</div>
 			</div>
 		</footer>
-		<script src="index.js"></script>
-		<script src="butSel.js"></script>
-		<script src="calc.js"></script>
-		<script src="mobileSel.js"></script>
-		<script src="mobileBlockThreed.js"></script>
-		<script src="mobile-article.js"></script>
-		<script src="selNav.js"></script>
+		<script src="jsDesk/index.js"></script>
+		<script src="jsDesk/butSel.js"></script>
+		<script src="jsDesk/calc.js"></script>
+		<script src="jsMobile/mobileSel.js"></script>
+		<script src="jsMobile/mobileBlockThreed.js"></script>
+		<script src="jsMobile/mobile-article.js"></script>
+		<script src="jsMobile/selNav.js"></script>
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=47728c8f-e493-45e0-ad67-ea7dbf3a07f8" type="text/javascript"></script>
-		<script src="map.js" type="text/javascript"></script>
-    	<script src="icon_map.js" type="text/javascript"></script>
+		<script src="jsDesk/map.js" type="text/javascript"></script>
+    	<script src="jsDesk/icon_map.js" type="text/javascript"></script>
+    	<script>
+  			window.onload = function () {
+    		document.body.classList.add('animation_hiding');
+    		window.setTimeout(function () {
+      			document.body.classList.add('animation');
+      			document.body.classList.remove('animation_hiding');
+    		}, 5000);
+  		}
+		</script>
 		<!--<script src="mouse.js"></script>-->
 	</body>
 </html>

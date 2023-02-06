@@ -2,17 +2,14 @@ let r=2;
 let k =1 ;
 let a=0;
 let selectReg = document.querySelector("#selectReg");  
-const mepReg = function(){
+//const mepReg = function(){
     ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center:mar.mapCoors[r].Coors,
             zoom: mar.mapCoors[r].zoom,
             controls: ['trafficControl']
-        }, {
-            searchControlProvider: 'yandex#search'
         }),
-    trafficControlObj = myMap.controls.get('trafficControl');
-    trafficControlObj.options.set('size', 'small');
+    
 
         // Создаём макет содержимого.
         MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
@@ -70,12 +67,7 @@ const mepReg = function(){
             // её "ножки" (точки привязки).
             //iconImageOffset: [-5, -38]
         });
-        myMap.controls.add('searchControl', {
-    // Расположим поисковую строку справа.
-    float: 'right',
-    // Включим возможность искать организации.
-    provider: 'yandex#search'
-});
+        
     myMap.controls.add('zoomControl', {
     size: 'small',
     float: 'none',
@@ -84,19 +76,34 @@ const mepReg = function(){
         bottom: '50px',
         right: '30px'
     }
-});
+}); 
     myMap.geoObjects
         .add(myPlacemark)
         .add(myPlacemarkWithContent)
-        .add(myPlacemar)
+        .add(myPlacemar);
+    selectReg.addEventListener('input', function () {
+        
+     var myGeocoder = ymaps.geocode(mar.mapCoors[r].cityTitle);
+        myGeocoder.then(function(res) {
+        var firstGeoObject = res.geoObjects.get(0);
+        bounds = firstGeoObject.properties.get('boundedBy');
+        coords = firstGeoObject.geometry.getCoordinates();
+        myMap.setBounds(bounds, {
+                
+            });
+    });
+        });
 });
-}
+//}
+
+
+
 selectReg.oninput = function(){ 
    if(selectReg.value === "Астрахань"){
         r=0;
         k= 1 ;
         a= 2;
-        mepReg();
+        
         console.log(1);
    
    };
@@ -104,14 +111,14 @@ selectReg.oninput = function(){
         r=1;
         k =2 ;
         a=0;
-        mepReg();
+        
         console.log(2);
    }
     if(selectReg.value === 'Брянск'){
         r=2;
         k =0 ;
         a=1;
-        mepReg()
+        
         console.log(3)
    }
 } 
